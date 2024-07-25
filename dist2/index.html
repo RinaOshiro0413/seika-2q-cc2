@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+       <h2>Animate Javascript</h2>
+    </div>
+    <script src="anime.min.js"></script>
+    <script>
+      const container = document.querySelector(".container");
+      for(var i=0; i <=50; i++){
+        const blocks = document.createElement("div");
+        blocks.classList.add("block");
+        container.appendChild(blocks);
+      }
+      function animateBlocks() {
+          anime({
+              targets: ".block",
+              translateX:function(){
+                  return anime.random(-800, 700);
+              },
+              translateY:function(){
+                  return anime.random(-500, 500);
+              }
+          })
+      }
+      animateBlocks();
+    </script>        
+</body>
+</html>
+
