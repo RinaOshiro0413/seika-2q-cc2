@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animate Javascript</title>
+    <title>My Music</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
     <div class="container">
-       <h2>Animate Javascript</h2>
+       <h2>My Music</h2>
     </div>
+
     <script src="anime.min.js"></script>
     <script>
       const container = document.querySelector(".container");
@@ -18,9 +19,9 @@
         blocks.classList.add("block");
         container.appendChild(blocks);
       }
-      function animateBlocks() {
+      function animateBlocks(){
           anime({
-              targets: ".block",
+              targets: "block",
               translateX:function(){
                   return anime.random(-800, 700);
               },
@@ -30,7 +31,8 @@
           })
       }
       animateBlocks();
-    </script>        
+    </script>     
+    
 </body>
 </html>
 
