@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Source Sans 3', sans-serif;
-}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(0, 50, 106);
+    background: rgb(0, 0, 0);
     position: relative;
 }
 .container {
@@ -22,7 +16,7 @@ body {
     height: 100%;
 }
 h2 {
-    color: white;
+    color: rgb(196, 125, 255);
     font-size: 6rem;
     text-align: center;
 }
@@ -31,6 +25,6 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: rgb(165,212,177);
+    background: rgb(255, 49, 228);
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
 }
