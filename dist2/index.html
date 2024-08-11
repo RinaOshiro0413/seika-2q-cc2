@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Music</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-
+    <title>welcome</title>
+    <link rel="stylesheet" href="style.css" media="all" />
+    
+<body>
     <div class="container">
-       <h2>My Music</h2>
+       <h2>welcome</h2>
     </div>
+
+<body class="move">
+  <div class="animation-bg"></div>
+
+  <div class="content">
+    <header>
+      <div class="black-bg"></div>
+      <div class="c-header">
+        <div class="inner-block">
+          <div class="logo">
+            MY Music
+          </div>
+          <button type="button" class="c-menu-btn">
+            <span class="inn">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </span>
+          </button>
+          <nav class="cmenu">
+            <ul>
+              <li><a href="">Song1</a></li>
+              <li><a href="">Song2</a></li>
+              <li><a href="">Song3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="mv-section">
+      <div class="mv-img">
+        <img src="img2/Unknown.jpeg" alt="">
+        <span class="mv-text">
+          Songs
+
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
 
     <script src="anime.min.js"></script>
     <script>
-      const container = document.querySelector(".container");
-      for(var i=0; i <=50; i++){
-        const blocks = document.createElement("div");
-        blocks.classList.add("block");
-        container.appendChild(blocks);
-      }
-      function animateBlocks(){
-          anime({
-              targets: "block",
-              translateX:function(){
-                  return anime.random(-800, 700);
-              },
-              translateY:function(){
-                  return anime.random(-500, 500);
-              }
-          })
-      }
-      animateBlocks();
-    </script>     
-    
+        const container = document.querySelector(".container");
+        for(var i=0; i <=50; i++){
+            const blocks = document.createElement("div");
+            blocks.classList.add("block");
+            container.appendChild(blocks);
+        }
+        function animateBlocks(){
+            anime({
+               targets: ".block",
+               translateX:function(){
+                   return anime.random(-800, 700);
+               },
+               translateY:function(){
+                   return anime.random(-500, 500);
+               }
+            })
+        }
+        animateBlocks();
+    </script>
 </body>
 </html>
-
