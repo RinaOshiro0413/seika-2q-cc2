@@ -254,34 +254,3 @@ body.appear .content {
 .black-bg.is-open {
     display: block;
 }
-
-/* メインビジュアル */
-.mv-section {
-    text-align: center;
-}
-.mv-img {
-    position: absolute;
-}
-.mv-text {
-    color: #fff;
-    font-size: 42px;
-    font-weight: bold;
-    position: absolute;
-    top: 40px;
-    left: 110px;
-    text-align: left;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-@media screen and (max-width:925px) {
-    .mv-text {
-        font-size: 5.625vw;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
